@@ -21,3 +21,4 @@ Route::get('/', function () {
 
 Route::get('/siswa', [SiswaController::class, 'index']);
 Route::get('/siswa/export_excel', [SiswaController::class, 'export_excel']);
+Route::post('/siswa/import_excel', [SiswaController::class, 'import_excel'])->name('siswa.import_excel');
